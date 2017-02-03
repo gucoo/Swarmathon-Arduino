@@ -93,7 +93,7 @@ void setup()
   fingers.attach(fingersPin,fingerMin,fingerMax);
   fingers.writeMicroseconds(fingerMin);
   wrist.attach(wristPin,wristMin,wristMax);
-  wrist.writeMicroseconds(wristMin);
+  wrist.writeMicroseconds(wristMin + 200);// + 200 test to see about the motor overheating
 
   rxBuffer = "";
 }
